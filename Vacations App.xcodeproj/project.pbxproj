@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		725ACDA52F106798C2EFB641 /* Pods_Vacations_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8AED21DF83E9D37198E6DD /* Pods_Vacations_App.framework */; };
 		A8FE98C71F45DE8200A29F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE98C61F45DE8200A29F1E /* AppDelegate.swift */; };
 		A8FE98C91F45DE8200A29F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE98C81F45DE8200A29F1E /* ViewController.swift */; };
 		A8FE98CC1F45DE8200A29F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FE98CA1F45DE8200A29F1E /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		794E6B4B1BF74A2DDE73EB23 /* Pods-Vacations App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacations App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vacations App/Pods-Vacations App.debug.xcconfig"; sourceTree = "<group>"; };
+		7CBD1B15307C113F867B93F0 /* Pods-Vacations App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacations App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vacations App/Pods-Vacations App.release.xcconfig"; sourceTree = "<group>"; };
 		A8FE98C31F45DE8200A29F1E /* Vacations App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vacations App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FE98C61F45DE8200A29F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FE98C81F45DE8200A29F1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A8FE98CD1F45DE8200A29F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8FE98D01F45DE8200A29F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8FE98D21F45DE8200A29F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8AED21DF83E9D37198E6DD /* Pods_Vacations_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacations_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725ACDA52F106798C2EFB641 /* Pods_Vacations_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38F09AC34578D1F886ECB1B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD8AED21DF83E9D37198E6DD /* Pods_Vacations_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8FE98BA1F45DE8200A29F1E = {
 			isa = PBXGroup;
 			children = (
 				A8FE98C51F45DE8200A29F1E /* Vacations App */,
 				A8FE98C41F45DE8200A29F1E /* Products */,
+				C7296DF055974304DA1C6055 /* Pods */,
+				38F09AC34578D1F886ECB1B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Vacations App";
 			sourceTree = "<group>";
 		};
+		C7296DF055974304DA1C6055 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				794E6B4B1BF74A2DDE73EB23 /* Pods-Vacations App.debug.xcconfig */,
+				7CBD1B15307C113F867B93F0 /* Pods-Vacations App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8FE98D51F45DE8200A29F1E /* Build configuration list for PBXNativeTarget "Vacations App" */;
 			buildPhases = (
+				1F4D5DEEA125DCD79D823393 /* [CP] Check Pods Manifest.lock */,
 				A8FE98BF1F45DE8200A29F1E /* Sources */,
 				A8FE98C01F45DE8200A29F1E /* Frameworks */,
 				A8FE98C11F45DE8200A29F1E /* Resources */,
+				930826657B5B67CDDEE0E541 /* [CP] Embed Pods Frameworks */,
+				2B15793562601648BD892862 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F4D5DEEA125DCD79D823393 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vacations App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B15793562601648BD892862 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Vacations App/Pods-Vacations App-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vacations App/Pods-Vacations App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		930826657B5B67CDDEE0E541 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vacations App/Pods-Vacations App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8FE98BF1F45DE8200A29F1E /* Sources */ = {
@@ -258,6 +339,7 @@
 		};
 		A8FE98D61F45DE8200A29F1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 794E6B4B1BF74A2DDE73EB23 /* Pods-Vacations App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Vacations App/Info.plist";
@@ -270,6 +352,7 @@
 		};
 		A8FE98D71F45DE8200A29F1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CBD1B15307C113F867B93F0 /* Pods-Vacations App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Vacations App/Info.plist";
