@@ -55,13 +55,22 @@ class ViewController: UIViewController {
         if currentDestination == nil{
             currentDestination = destinations.first
         
-            mapView?.camera = GMSCameraPosition.camera(withTarget: currentDestination!.location, zoom: currentDestination!.zoom)
+            CATransaction.begin()
+            CATransaction.setValue(2, forKey: kCATransactionAnimationDuration)
+            
+            mapView?.animate(to: GMSCameraPosition.camera(withTarget: currentDestination!.location, zoom: currentDestination!.zoom))
+            
+            CATransaction.commit()
+            
+           
             
             let marker = GMSMarker(position: currentDestination!.location)
             marker.title = currentDestination?.name
             marker.map = mapView
         }else{
             if let index = destinations.index(of: currentDestination!){
+                
+                
                 currentDestination = destinations[index+1]
                 
                 mapView?.camera = GMSCameraPosition.camera(withTarget: currentDestination!.location, zoom: currentDestination!.zoom)
