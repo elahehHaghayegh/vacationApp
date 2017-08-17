@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         let mapView = GMSMapView.map(withFrame: CGRect.zero , camera: camera)
         
         view = mapView
+         //put marker on the map
+        let currentLocation = CLLocationCoordinate2DMake(45.469642, -73.744781)
+        let marker = GMSMarker(position: currentLocation)
+        
+        marker.title = "Montréal Airport (YUL)"
+        marker.map = mapView
         
     }
 
